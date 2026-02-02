@@ -110,8 +110,5 @@ After completing the SQL analysis, the cleaned and aggregated data was imported 
 - Product performance analysis
 - Demographic insights (age & gender)
 
-📸 *Dashboard screenshots can be found in the `/images` folder.*
 
----
 
-## 📂 Project Structure
