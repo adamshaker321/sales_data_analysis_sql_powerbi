@@ -1,114 +1,70 @@
-# 📊 Sales Data Analysis Project (SQL Server & Power BI)
+# Sales Data Analysis with SQL Server & Power BI
 
-##  Project Overview
-This project focuses on analyzing sales data using **SQL Server** for data exploration, data quality checks, KPI calculations, and advanced analysis, followed by building an **interactive Power BI dashboard** for visualization and business insights.
+## Overview
 
-The analysis is performed on a star-schema data warehouse containing fact and dimension tables.
+This project demonstrates an end-to-end sales analysis workflow using **SQL Server** and **Power BI**. SQL Server was used for data exploration, data quality validation, KPI calculation, customer segmentation, and advanced analytical queries, while Power BI was used to build an interactive dashboard for business reporting.
 
----
+The analysis is based on a Star Schema data warehouse consisting of one fact table and multiple dimension tables.
 
-## 🛠 Tools & Technologies
-- **SQL Server** (Data Analysis & Querying)
-- **Power BI** (Dashboard & Visualization)
-- **Excel** (Source data files)
+## Technologies
 
----
+- SQL Server
+- T-SQL
+- Power BI
+- Excel
 
-## 🗂 Data Model
-The project is based on the following tables:
+## Data Model
 
-- `gold.fact_sales`  
-  Contains transactional sales data (orders, sales amount, quantity, dates).
+- **Fact Table**
+  - `gold.fact_sales`
 
-- `gold.dim_customers`  
-  Contains customer information (demographics, country, gender, birthdate).
+- **Dimension Tables**
+  - `gold.dim_customers`
+  - `gold.dim_products`
 
-- `gold.dim_products`  
-  Contains product details (product name, category, cost).
+## Analysis Performed
 
----
+- Data quality validation
+- KPI calculation
+- Exploratory Data Analysis (EDA)
+- Sales trend analysis
+- Customer segmentation
+- Age group analysis
+- Gender distribution by country
+- Product performance analysis
+- Time-series analysis using monthly and yearly sales
 
-## 🔍 Analysis Performed
+## Dashboard
 
-### 1️⃣ Schema & Data Understanding
-- Explored table structures using `INFORMATION_SCHEMA`
-- Identified key columns and relationships between fact and dimension tables
-
----
-
-### 2️⃣ Data Quality Checks & KPIs
-- Missing values analysis for:
-  - Customer country, gender, and birthdate
-  - Order number, customer key, and product key
-- Core KPIs calculated:
-  - Total transactions
-  - Total sales amount
-  - Total quantity sold
-  - Average price and average product cost
-
----
-
-### 3️⃣ Exploratory Data Analysis (EDA)
-- Total orders per year
-- Total sales amount per year
-- Customer purchase frequency ranking
-- Top 10 best-selling products
-- Distinct product categories
-
----
-
-### 4️⃣ Time Series Analysis
-- Monthly sales trend analysis:
-  - Total sales amount per month
-  - Total orders per month  
-- Prepared aggregated data for **line chart visualization** in Power BI
-
----
-
-### 5️⃣ Customer Segmentation (Behavioral)
-Customers were segmented based on purchase frequency:
-- **One-time Buyers** (1 order)
-- **Repeat Buyers** (2–5 orders)
-- **High-frequency Buyers** (6+ orders)
-
-This segmentation helps identify loyal customers and customer retention opportunities.
-
----
-
-### 6️⃣ Customer Age Analysis
-- Accurate age calculation based on birthdate
-- Age distribution analysis
-- Filtering out invalid ages
-
----
-
-### 7️⃣ Age Group Segmentation
-Customers were grouped into age ranges for visualization:
-- Under 18
-- 18–25
-- 26–35
-- 36–45
-- 46–60
-- 60+
-- Unknown
-
----
-
-### 8️⃣ Gender Distribution by Country
-- Gender distribution analysis per country
-- Ranking genders within each country using window functions
-- Useful for demographic and market analysis
-
----
-
-## 📈 Power BI Dashboard
-After completing the SQL analysis, the cleaned and aggregated data was imported into **Power BI** to build an interactive dashboard including:
+The Power BI dashboard includes:
 
 - Sales KPIs
-- Yearly & monthly sales trends
-- Customer segmentation charts
-- Product performance analysis
-- Demographic insights (age & gender)
+- Monthly & yearly sales trends
+- Customer segmentation
+- Product performance
+- Customer demographics
+- Interactive filters and visualizations
 
+## Repository Structure
 
+```text
+Sales-Data-Analysis/
+│
+├── SQL Scripts/
+├── Power BI Dashboard/
+├── Dataset/
+├── Images/
+└── README.md
+```
 
+## Skills Demonstrated
+
+- SQL Querying
+- Data Analysis
+- Data Quality
+- KPI Development
+- Window Functions
+- Customer Segmentation
+- Time-Series Analysis
+- Data Visualization
+- Power BI Dashboard Development
